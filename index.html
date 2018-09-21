@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Combat!</title>
+</head>
+<header>
+    <h2>Choose your Hero and Battle the Goblin Horde!</h2>
+    <div class="units" width="360">
+        <h3 class="unit">
+                <button id="paladinFightGoblinButton">
+            <img src="style/paladin.jpg" width="90" height="150">
+            </button>
+            <p><u>Lord Farkas The Brave</u></p>
+            <p>Class: Paladin</p>
+            <p>Health: 110</p>
+            <p>Critical Hit Chance: 7%</p>
+            <p>Accuracy: 43%</p>
+            <p>Weapon: Long Sword of Light</p>
+            <p>Armor Type: Dragon Scale</p>
+            <p>Damage: 17</p> 
+            <p id="paladinCurrentHealth">110</p>
+        </h3>
+        <h3 class="unit">
+                <button id="barbarianFightGoblinButton">
+            <img src="style/barbarian.jpg" width="90" height="150">
+        </button>
+            <p><u>Gruulvik The Raider</u></p>
+            <p>Class: Barbarian</p>
+            <p>Health: 120</p>
+            <p>Critical Hit Chance: 4%</p>
+            <p>Accuracy: 35%</p>
+            <p>Weapon: Cursed Battleaxe</p>
+            <p>Armor Type: Hide</p> 
+            <p>Damage: 19</p> 
+            <p id="barbarianCurrentHealth">120</p>
+        </h3>
+        <h3 class="unit">
+                <button id="wizardFightGoblinButton">
+            <img src="style/wizard.jpg" width="90" height="150">
+        </button>
+            <p><u>Astrial The Wise</u></p>
+            <p>Class: Wizard</p>
+            <p>Health: 75</p>
+            <p>Critical Hit Chance: 60%</p>
+            <p>Accuracy: 73%</p>
+            <p>Weapon: Cataclysmic Staff</p>
+            <p>Armor Type: Enchanted Robe</p>
+            <p>Damage: 9</p> 
+            <p id="wizardCurrentHealth">75</p>
+        </h3>
+        <h3 class="unit">
+                <button id="rangerFightGoblinButton">
+            <img src="style/ranger.png" width="90" height="150">
+        </button>
+            <p><u>Xavamor The Ghost</u></p>
+            <p>Class: Ranger</p>
+            <p>Health: 60</p>
+            <p>Critical Hit Chance: 95%</p>
+            <p>Accuracy: 95%</p>
+            <p>Weapon: Elder Bow</p>
+            <p>Armor Type: Elven Armor</p>
+            <p>Damage: 4.5</p> 
+            <p id="rangerCurrentHealth">60</p>
+        </h3>
+        <h3 class="enemies">
+            <img src="style/goblin.jpg" width="90" heights="150">
+            <p><u>Goblins of the Red Crag</u></p>
+            <p>Class: Goblin</p>
+            <p>Health: 30</p>
+            <p>Critical Hit Chance: 0.5</p>
+            <p>Accuracy: 55%</p>
+            <p>Weapon: dagger</p>
+            <p>Damage: 6</p>
+            <p class="goblin" id="goblinCurrentHealth">30</p>
+            <p class="goblin" id="goblin1CurrentHealth">30</p>
+            <p class="goblin" id="goblin2CurrentHealth">30</p>
+            <p class="goblin" id="goblin3CurrentHealth">30</p>
+            <p class="goblin" id="goblin4CurrentHealth">30</p>
+            <p class="goblin" id="goblin5CurrentHealth">30</p>
+            <p class="goblin" id="goblin6CurrentHealth">30</p>
+        </h3>
+    </div>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+    </header>
+    <body>
+        <button id="resetbutton">Reset Game</button>
+        <!-- <button id="enragebarbarian">Enrage the Barbarian and battle the clan!</button>
+        <div id="barbarianBattleClan">
+        <h3>Barbarian Battles Clan</h3>
+        <button id="barbarianFightClanButton">Battle Clan</button>
+    </div> -->
+    <main id="combatMessage"></main>
+    <script src="gameLogic.js"></script>
+    <script src="heroCreatures.js"></script>
+    <script src="enemyCreatures.js"></script>
+
+</body>
+</html>
