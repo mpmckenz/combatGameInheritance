@@ -1,0 +1,44 @@
+.enemies {
+    margin-left: 60px;
+    width: 120px;
+    border-width: 5px;
+    border-style: outset;
+    float: right;
+}
+
+.units {
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+}
+
+.unit {
+    border-width: 5px;
+    border-style: outset;
+}
+
+#barbarianBattleClan {
+    border-width: 5px;
+    border-style: outset;
+    width: 480px;
+}
+
+#paladinCurrentHealth {
+    background-color: lightblue;
+}
+
+#barbarianCurrentHealth {
+    background-color: lightgreen;
+}
+
+#wizardCurrentHealth {
+    background-color: lightsalmon;
+}
+
+#rangerCurrentHealth {
+    background-color: yellow;
+}
+
+.goblin {
+    background-color: lightcoral;
+}
